@@ -1,1 +1,11 @@
 Ingest CSV records into Accumulo
+
+Installing
+git clone
+cd accumulo-csv
+mvn install
+
+To fixup the environment 
+
+cd bin
+for i in `find ~/.m2/ -name "*.jar" `; do cp $i ../lib/ ; done
